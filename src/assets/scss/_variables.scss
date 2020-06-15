@@ -4,10 +4,13 @@ $primary: #004d40;
 $accent: #00bfa5;
 $darkPrimary: #00251a;
 $lightPrimary: #39796b;
+$white: white;
+$black: black;
+$grey: rgba(0,0,0,0.5);
 
 // TYPOGRAPHY
 
-$font: 'Montserrat', sans-serif;
+$font: "Montserrat", sans-serif;
 $thin: 100;
 $extraLight: 200;
 $light: 300;
@@ -20,5 +23,4 @@ $black: 900;
 
 // MISCELLANEOUS
 
-$shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14),
-  0 1px 18px 0 rgba(0, 0, 0, 0.12);
+$shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);

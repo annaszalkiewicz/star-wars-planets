@@ -1,20 +1,15 @@
-@import '../../assets/scss/variables';
-@import '../../assets/scss/styles.scss';
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: $darkPrimary;
-    padding: 1rem;
-    box-shadow: $shadow;
-    .header-heading {
-        font-family: $font;
-        font-weight: 700;
-        font-size: 1rem;
-        color: white;
-        text-transform: uppercase;
-        font-stretch: ultra-expanded;
-    }
+  position: relative;
+  width: 100%;
+  background: $darkPrimary;
+  padding: 1rem;
+  box-shadow: $shadow;
+  z-index: 10;
+  .header-heading {
+    @include headingOne;
+    color: $white;
+  }
 }
