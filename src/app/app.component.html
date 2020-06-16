@@ -1,7 +1,9 @@
 <div class="container">
   <app-header></app-header>
   <app-search></app-search>
-  <main>
-    <router-outlet></router-outlet>
+  <main class="main" id="main">
+    <router-outlet>
+      <app-planets-list></app-planets-list>
+    </router-outlet>
   </main>
 </div>
