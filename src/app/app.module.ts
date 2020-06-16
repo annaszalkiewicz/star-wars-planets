@@ -8,13 +8,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
 import { PlanetsListComponent } from './planets-list/planets-list.component';
+import { PlanetDetailsComponent } from './planets-list/planet-details/planet-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SearchComponent,
-    PlanetsListComponent
+    PlanetsListComponent,
+    PlanetDetailsComponent
   ],
   imports: [
     BrowserModule,
