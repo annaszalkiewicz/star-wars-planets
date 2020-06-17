@@ -10,6 +10,7 @@ import { SearchComponent } from './search/search.component';
 import { PlanetsListComponent } from './planets-list/planets-list.component';
 import { PlanetDetailsComponent } from './planets-list/planet-details/planet-details.component';
 import { FooterComponent } from './footer/footer.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FooterComponent } from './footer/footer.component';
     SearchComponent,
     PlanetsListComponent,
     PlanetDetailsComponent,
-    FooterComponent
+    FooterComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

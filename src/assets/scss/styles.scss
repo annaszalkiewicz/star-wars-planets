@@ -23,3 +23,8 @@ body {
   font-weight: $regular;
   background: $lightGrey;
 }
+.main {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}

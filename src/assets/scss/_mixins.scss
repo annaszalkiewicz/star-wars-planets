@@ -22,3 +22,21 @@
   justify-content: center;
   align-items: center;
 }
+@mixin centerVertically {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@mixin buttonPrimary {
+  background: $primary;
+  border: none;
+  border-radius: 5px;
+  color: $white;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem;
+  width: 13rem;
+}

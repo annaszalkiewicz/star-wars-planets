@@ -1,0 +1,22 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.notFound {
+    width: 100%;
+    height: calc(100vh - 11rem);
+    padding: 1rem;
+    @include centerVertically;
+    h2 {
+        color: $primary;
+        margin: 0;
+    }
+}
+.notFound-button {
+    @include buttonPrimary;
+    margin: 1rem 0 0 0;
+}
+@media screen and (min-width: 768px) {
+    .notFound-button {
+        margin: 2rem 0 0 0;
+    }
+}
