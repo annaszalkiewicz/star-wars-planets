@@ -1,0 +1,15 @@
+@import "../../assets/scss/variables";
+@import '../../assets/scss/mixins';
+
+.footer {
+  width: 100%;
+  padding: 1rem;
+  background: $lightPrimary;
+  @include centerItem;
+  p {
+    color: white;
+  }
+  a {
+    color: $white;
+  }
+}
