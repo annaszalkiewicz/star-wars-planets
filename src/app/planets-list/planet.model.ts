@@ -1,4 +1,5 @@
 import { Resident } from './resident.model';
+import { Film } from './film.model';
 
 export class Planet {
   public name: string;
@@ -11,7 +12,7 @@ export class Planet {
   public surfaceWater: string;
   public population: string;
   public residents: Resident[];
-  public films: [];
+  public films: Film[];
 
   constructor(
     name: string,
@@ -24,7 +25,7 @@ export class Planet {
     surface: string,
     population: string,
     residents: Resident[],
-    films: []
+    films: Film[]
   ) {
     this.name = name;
     this.rotationPeriod = rotation;
