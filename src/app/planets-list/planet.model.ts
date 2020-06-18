@@ -1,3 +1,5 @@
+import { Resident } from './resident.model';
+
 export class Planet {
   public name: string;
   public rotationPeriod: string;
@@ -8,6 +10,8 @@ export class Planet {
   public terrain: string;
   public surfaceWater: string;
   public population: string;
+  public residents: Resident[];
+  public films: [];
 
   constructor(
     name: string,
@@ -18,16 +22,20 @@ export class Planet {
     gravity: string,
     terrain: string,
     surface: string,
-    population: string
+    population: string,
+    residents: Resident[],
+    films: []
   ) {
-      this.name = name;
-      this.rotationPeriod = rotation;
-      this.orbitalPeriod = orbital;
-      this.diameter = diameter;
-      this.climate = climate;
-      this.gravity = gravity;
-      this.terrain = terrain;
-      this.surfaceWater = surface;
-      this.population = population;
+    this.name = name;
+    this.rotationPeriod = rotation;
+    this.orbitalPeriod = orbital;
+    this.diameter = diameter;
+    this.climate = climate;
+    this.gravity = gravity;
+    this.terrain = terrain;
+    this.surfaceWater = surface;
+    this.population = population;
+    this.residents = residents;
+    this.films = films;
   }
 }
