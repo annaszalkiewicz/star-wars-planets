@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { EffectsModule } from '@ngrx/effects';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +17,9 @@ import { PlanetDetailsComponent } from './planets-list/planet-details/planet-det
 import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
+import { planetsReducer } from './planets-list/store/planets.reducer';
+import { PlanetsEffects } from './planets-list/store/planets.effects';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,18 +28,20 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     PlanetsListComponent,
     PlanetDetailsComponent,
     FooterComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    StoreModule.forRoot({ planets: planetsReducer }),
+    EffectsModule.forRoot([PlanetsEffects]),
     StoreDevtoolsModule.instrument({
-      logOnly: environment.production
-    })
+      logOnly: environment.production,
+    }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
